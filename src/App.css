@@ -324,6 +324,7 @@
   width: 100%;
   background-size: cover;
   margin-top: 130px;
+  padding-bottom: 20px;
 }
 
 .footer h1{
@@ -332,13 +333,13 @@
   padding-bottom: 20px;
 }
 
-.contact{
+.contact-sec{
   padding-top: 150px;
   padding-left: 150px;
   line-height: 5px;
 }
 
-.contact p{
+.contact-sec p{
   color: white;
 }
 
@@ -411,4 +412,58 @@
 #last-input input{
   height: 80px;
   border-radius: 40px;
+}
+
+.contact-btn{
+  padding: 15px 25px;
+  border-radius: 25px;
+  margin: 20px 0;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(255, 87, 51);
+  color: white;
+  cursor: pointer;
+}
+
+.contact-btn:hover{
+  color: rgb(255, 87, 51);
+  background-color: white;
+}
+
+.copy{
+  padding-bottom: 20px;
+  padding-left: 145px;
+  color: gray;
+  font-size: 14px;
+}
+
+.social-icon .fa{
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.social-icon a{
+  cursor: pointer;
+}
+
+.social-icon{
+  padding-top: 50px;
+}
+
+.header{
+  display: block ruby;
+}
+
+.search{
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  top: 32px;
+}
+
+.search .fa{
+  padding-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
 }

@@ -16,11 +16,22 @@ function App() {
     <div>
       <div className="App">
         <div>
-          <p className='contact'>+94 77 777 9617 / sashika@glitzpark.com</p>
+          <div className='header'>
+            <p className='contact'>+94 77 777 9617 / sashika@glitzpark.com</p>
+            <div className='search'>
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+          </div>
           <div className='main-con'>
             <h4>WELCOME TO MY WORLD</h4>
             <h1>Hi, I'm <span>Sashika de Silva</span></h1>
             <h1><span>a</span> businessman.</h1>
+            <div className='social-icon'>
+              <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
         <div className='user'>
@@ -162,7 +173,7 @@ function App() {
       <div className='footer'>
         <div className='footer-con'>
           <div>
-            <div className='contact'>
+            <div className='contact-sec'>
               <h1>Contact</h1>
               <div className='demo'>
                 <p>Let's Make Something Creative!</p>
@@ -206,9 +217,10 @@ function App() {
               <label>Phone Number</label>
               <input/>
             </div>
-            <button>Contact Me</button>
+            <button className='contact-btn'>Contact Me</button>
           </div>
         </div>
+        <p className='copy'>Copyright 2022</p>
       </div>
     </div>
   );
