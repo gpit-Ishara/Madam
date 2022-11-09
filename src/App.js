@@ -1,26 +1,35 @@
-import logo from './logo.svg';
+import logo from './img/logo.svg';
 import './App.css';
-import user from './sashika.jpg';
-import line from './line.PNG';
-import glitz from './logo-new.png';
-import ranliya from './ranliya.png';
-import cctsss from './cctsss.png';
-import icc from './icc.png';
-import news from './breaking-news.PNG';
-import news1 from './news1.PNG';
-import map from './map.jpg';
+import user from './img/sashika.jpg';
+import line from './img/line.PNG';
+import glitz from './img/logo-new.png';
+import ranliya from './img/ranliya.png';
+import cctsss from './img/cctsss.png';
+import icc from './img/icc.png';
+import news from './img/breaking-news.PNG';
+import news1 from './img/news1.PNG';
+import map from './img/map.jpg';
+import Modal from './Component/modal';
+import { useState } from 'react';
+import plus from './img/plus-light-pattern.png';
 
 
 function App() {
+
+  const [openModal, setOpenModal] = useState(false)
   return (
     <div>
       <div className="App">
         <div>
           <div className='header'>
             <p className='contact'>+94 77 777 9617 / sashika@glitzpark.com</p>
+            <img src={plus} />
             <div className='search'>
               <i class="fa fa-search" aria-hidden="true"></i>
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i class="fa fa-bars" aria-hidden="true" onClick={() => {
+                setOpenModal(true);
+              }}></i>
+              {openModal && <Modal setModalOpen = {setOpenModal} />}
             </div>
           </div>
           <div className='main-con'>
@@ -39,6 +48,7 @@ function App() {
         </div>
       </div>
       <div className='second-con'>
+        <img className='plus' src={plus} />
         <div className='second'>
           <div className='age'>
             <div>
@@ -196,11 +206,11 @@ function App() {
             <div className='first-input'>
               <div className='name'>
                 <label>Your Name (Required)</label>
-                <input/>
+                <input type='name'/>
               </div>
               <div className='name'>
                 <label>Your Email (Required)</label>
-                <input/>
+                <input type='email'/>
               </div>
             </div>
             <div className='sec-input'>
@@ -214,8 +224,8 @@ function App() {
               </div>
             </div>
             <div className='name' id='last-input'>
-              <label>Phone Number</label>
-              <input/>
+              <label>Your Message</label>
+              <textarea/>
             </div>
             <button className='contact-btn'>Contact Me</button>
           </div>
